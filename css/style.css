@@ -40,17 +40,22 @@ a.skip{
   /* Requirement 5 code here -- Do not remove this comment. */
   .about{
     grid-column-start: 2;
+    grid-column-end: auto;
+    
   }
   .clients{
     grid-column-start: 2;
+    grid-column-end: auto;
   }
 
   .method{
     grid-column-start:2;
+    grid-column-end: auto;
   }
 
   .contact{
     grid-column-start:2;
+    grid-column-end: auto;
   }
 
   /* Requirement 6 code here -- Do not remove this comment. */
@@ -63,91 +68,87 @@ a.skip{
   /* Requirement 7 code here -- Do not remove this comment. */
 
   .about-image{
-    grid-column:  1/ span 3;
+    grid-column-start:  1;
+    grid-column-end: span 3;
     max-height: 500px;
-    grid-row: 1;
+    grid-row-start: 1;
 
   }
 
   .clients-image{
-    grid-column:  1/ span 3;
+    grid-column-start:  1;
+    grid-column-end: span 3;
     max-height: 500px;
-    grid-row: 2;
+    grid-row-start: 2;
   
 
   }
 
   .method-image{
-    grid-column:  1/ span 3;
+    grid-column-start:  1;
+    grid-column-end: span 3;
     max-height: 500px;
-    grid-row: 3;
+    grid-row-start: 3;
 
   }
 
   .contact-image{
-    grid-column:  1/ span 3;
+    grid-column-start:  1;
+    grid-column-end: span 3;
     max-height: 500px;
-    grid-row: 4;
+    grid-row-start: 4;
 
   }
   
   /* Requirement 8 code here -- Do not remove this comment. */
 
   .about{
-    grid-row: 1;
+    grid-row-start: 1;
   }
   .clients{
-    grid-row: 2;
+    grid-row-start: 2;
   }
   .method{
-    grid-row: 3;
+    grid-row-start: 3;
   }
   .contact{
-    grid-row:4;
+    grid-row-start:4;
   }
 
   
   /* Requirement 9 code here -- Do not remove this comment. */
   .about{
     display: grid;
-    justify-content: center;
-    align-content: center;
+    align-self: auto;
     max-height: 40vh;
     overflow: scroll;
   }
   .clients{
     display: grid;
-    justify-content: center;
-    align-content: center;
+    align-self: auto;
     max-height: 40vh;
     overflow: scroll;
   }
   .method{
     display: grid;
-    justify-content: center;
-    align-content: center;
+    align-self: auto;
     max-height: 40vh;
     overflow: scroll;
   }
   .contact{
     display: grid;
-    justify-content: center;
-    align-content: center;
+    align-self: auto;
     max-height: 40vh;
     overflow: scroll;
   }
 
 
 
-
   /*Add the media query here.  Make sure to */
   @media screen and (min-width: 800px){
-
-  
   nav{
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
-
     text-align:right
 
   }
@@ -158,23 +159,92 @@ a.skip{
   }
 
   
-
-  
   /* Requirement 11 code here -- Do not remove this comment. */
 
-
-
   /* Requirement 12 code here -- Do not remove this comment. */
+  .container{
+    display:grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 300px 300px 300px 300px;
   
-
+    }
 
   /* Requirement 13 code here -- Do not remove this comment. */
- 
+  .about{
+    grid-column-start: 3;
+    grid-column-end: span 2;
+  }
+
+  .method{
+    grid-column-start: 3;
+    grid-column-end: span 2;
+  }
+
+  .clients-image{
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  }
+
+  .contact-image{
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    }
+
 
   /* Requirement 14 code here -- Do not remove this comment. */
- 
 
+  .clients{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    }
+
+  .contact{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    }
+
+  .about-image{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    }
+
+  .method-image{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    }
+ 
   /* Requirement 15 code here -- Do not remove this comment. */}
+  .clients-image{
+    grid-column-start:  3;
+    grid-column-end: span 2;
+    height: auto;
+    grid-row-start: 2;
+    
+    }
+
+  .contact-image{
+    grid-column-start:  3;
+    grid-column-end: span 2;
+    max-height: 40vh;
+    grid-row-start: 4;
+    
+    }
+
+  .about-image{
+    grid-column-start:  2;
+    grid-column-end: span 3;
+    max-height: 300px;
+    grid-row-start: 1;
+    
+    }
+
+  .method-image{
+    grid-column-start:  2;
+    grid-column-end: span 3;
+    max-height: 300px;
+    grid-row-start: 3;
+    
+    }
 
 /** Code for prefers reduced motion **/
 /* Make no changes below this line.
