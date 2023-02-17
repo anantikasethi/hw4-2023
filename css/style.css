@@ -108,7 +108,7 @@ a.skip{
   /* Requirement 9 code here -- Do not remove this comment. */
   .about{
     display: grid;
-    max-height: 40 vh;
+    max-height: 40vh;
     overflow: scroll;
     justify-content: center;
     align-self: center;
@@ -204,25 +204,24 @@ a.skip{
  
   /* Requirement 15 code here -- Do not remove this comment. */}
   .clients-image{
-    
+    overflow: hidden;
     
     row-gap: 30px;
     }
 
   .contact-image{
-    
+    overflow: hidden;
     row-gap: 30px;
     }
 
   .about-image{
-    
+    overflow: hidden;
     row-gap: 30px;
     
     }
 
   .method-image{
-    
-    
+    overflow: hidden;
     row-gap: 30px;
     
     }
